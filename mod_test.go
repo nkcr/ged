@@ -2,9 +2,10 @@ package ged
 
 import (
 	"fmt"
-	"ged/alphabet"
 	"math/rand"
 	"testing"
+
+	"github.com/nkcr/ged/alphabet"
 
 	"github.com/stretchr/testify/require"
 )

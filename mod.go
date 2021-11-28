@@ -4,9 +4,10 @@
 package ged
 
 import (
-	"ged/alphabet"
 	"math"
 	"strings"
+
+	"github.com/nkcr/ged/alphabet"
 
 	"golang.org/x/xerrors"
 )

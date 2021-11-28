@@ -1,4 +1,4 @@
-module ged
+module github.com/nkcr/ged
 
 go 1.16
 
