@@ -1,9 +1,11 @@
 # GED - Global-purpose Encoding / Decoding library
 
-This library lets you use common encoding/decoding schemes and allows you to use
-custom ones.
+[![Go](https://github.com/nkcr/ged/actions/workflows/go.yml/badge.svg)](https://github.com/nkcr/ged/actions/workflows/go.yml)
 
-Use standard hex encoding/decoding:
+This library lets you use common encoding/decoding schemes and allows you to
+define custom ones.
+
+Use standard **hex** encoding/decoding:
 
 ```go
 encoded := ged.EncodeHex([]byte("Hello World"))
@@ -12,7 +14,7 @@ decoded, err := ged.DecodeHex(encoded)
 // => Hello World
 ```
 
-Uses standard base 58 encoding/decoding:
+Use standard **base58** encoding/decoding:
 
 ```go
 encoded := ged.Encode58([]byte("Hello World"))
@@ -21,7 +23,7 @@ decoded, err := ged.Decode58(encoded)
 // => Hello World
 ```
 
-Use a custom encoding:
+Use a **custom encoding**:
 
 ```go
 alphabet := alphabet.MustCreate("ABCD1234")
